@@ -1,0 +1,11 @@
+@use '../src/variables.scss' as *;
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+
+.countdown
+{
+    font-size: 15px;
+    color: white;
+    opacity: 70%;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-weight: 500;
+}
