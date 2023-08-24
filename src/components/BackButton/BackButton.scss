@@ -1,0 +1,21 @@
+@use '../src/variables.scss' as *;
+
+
+.back-button
+{
+    width: 44px;
+    height: 44px;
+    border-radius: 7.97px;
+    background-color: $back-button-bg-color;
+    opacity: 70%;
+    border: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    .back-button-svg
+    {
+        width: 22px;
+        height: 22px;
+    }
+}

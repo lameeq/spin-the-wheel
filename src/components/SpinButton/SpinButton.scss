@@ -1,5 +1,5 @@
 @use '../src/variables.scss' as *;
-@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+
 
 .spin-button
 {
@@ -7,10 +7,10 @@
  height: 52px;
  border-radius: 20px;
  border: none;
- background: linear-gradient(#21CC51, #166E55);
- color:white;
+ background: $spin-button-bg-color;
+ color: $text-color;
  font-size: 24px;
- font-family: 'TT Norms Pro', sans-serif;
+ font-family: $primary-font;
  font-weight: 700;
                           
 }
