@@ -1,0 +1,20 @@
+@use '../src/variables.scss' as *;
+
+
+.spins-counter
+{
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    width: 73px;
+    height: 26px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 9px;
+    color: black;
+    
+    
+}
