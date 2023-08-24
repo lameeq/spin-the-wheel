@@ -1,0 +1,20 @@
+@use '../src/variables.scss' as *;
+
+.settings-button
+{
+    width: 44px;
+    height: 44px;
+    border-radius: 7.97px;
+    background-color: $back-button-bg-color;
+    opacity: 70%;
+    border: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    .settings-button-svg
+    {
+        width: 26px;
+        height: 26px;
+    }
+}
