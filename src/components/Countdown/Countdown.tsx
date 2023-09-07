@@ -1,15 +1,14 @@
+// Countdown.tsx
 import React, { useState, useEffect } from 'react';
 
-
-interface CountdownState {
-  remainingSeconds: number;
-  countingDown: boolean;
+interface CountdownProps {
+  setSpins: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const Countdown: React.FC = () => {
-  const initialRemainingSeconds = 60; // 1 minute in seconds
+const Countdown: React.FC<CountdownProps> = ({ setSpins }) => {
+  const initialRemainingSeconds = 10; // 1 minute in seconds
 
-  const [countdownState, setCountdownState] = useState<CountdownState>({
+  const [countdownState, setCountdownState] = useState({
     remainingSeconds: initialRemainingSeconds,
     countingDown: true,
   });
@@ -39,6 +38,8 @@ const Countdown: React.FC = () => {
         countingDown: true,
       });
 
+      // Call the setSpins function to update the spins state
+      setSpins((prevSpins) => prevSpins + 5); // You can adjust the amount as needed
     }
   };
 

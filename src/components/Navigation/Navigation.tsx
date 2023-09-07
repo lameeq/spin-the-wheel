@@ -1,6 +1,9 @@
 import BackButton from "../BackButton/BackButton";
-// import SpinsCounter from "../SpinsCounter/SpinsCounter";
 import SettingsButton from "../SettingsButton/SettingsButton";
+import ParentComponent from "../Container";
+
+
+
 import './Navigation.scss'
 
 function Navigation()
@@ -9,7 +12,7 @@ function Navigation()
         <>
         <div className="navbar">
             <BackButton/>
-            {/* <SpinsCounter/> */}
+            <ParentComponent/>
             <SettingsButton/>
         </div>
             
